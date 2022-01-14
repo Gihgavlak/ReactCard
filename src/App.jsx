@@ -10,11 +10,20 @@ import CondicionalComIf from "./components/basicos/CondicionalComIf";
 import Pai from "./components/comunicacao/direta/Pai";
 import SuperPai from "./components/comunicacao/indireta/SuperPai";
 import Input from "./components/formulario/Input";
+import Contador from "./components/contador/Contador";
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default props =>
+export default (props) =>(
 <div className="App">
+    <h1>Fundamentos React</h1>
+
+    <div className="Cards">
+
+    <Card titulo = "Contador">
+            <Contador></Contador>
+        </Card>
+
     <Card titulo = "Input">
             <Input></Input>
         </Card>
@@ -61,3 +70,7 @@ export default props =>
     </Card>
 
     </div>
+
+    </div>
+
+);
