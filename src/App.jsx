@@ -8,11 +8,16 @@ import Repeticao from "./components/basicos/Repeticao";
 import Condicional from "./components/basicos/Condicional";
 import CondicionalComIf from "./components/basicos/CondicionalComIf";
 import Pai from "./components/comunicacao/direta/Pai";
+import SuperPai from "./components/comunicacao/indireta/SuperPai";
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default props =>
 <div className="App">
+    <Card titulo = "Comunicação Indireta">
+            <SuperPai></SuperPai>
+        </Card>
+
     <Card titulo = "Comunicação Direta">
             {/*  outra forma
             <Pai></Pai>*/}
