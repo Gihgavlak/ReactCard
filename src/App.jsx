@@ -21,7 +21,7 @@ export default (props) =>(
     <div className="Cards">
 
     <Card titulo = "Contador">
-            <Contador></Contador>
+            <Contador passo={10} valor= {100}></Contador>
         </Card>
 
     <Card titulo = "Input">
