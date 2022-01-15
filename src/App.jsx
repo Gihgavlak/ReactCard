@@ -11,7 +11,7 @@ import Pai from "./components/comunicacao/direta/Pai";
 import SuperPai from "./components/comunicacao/indireta/SuperPai";
 import Input from "./components/formulario/Input";
 import Contador from "./components/contador/Contador";
-
+import Mega from './components/mega/Mega'
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (props) =>(
@@ -19,6 +19,10 @@ export default (props) =>(
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+
+    <Card titulo = "Mega">
+            <Mega qtdeNumero={6}></Mega>
+        </Card>
 
     <Card titulo = "Contador">
             <Contador passo={10} valor= {100}></Contador>
