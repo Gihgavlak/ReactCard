@@ -2,26 +2,21 @@ import React from "react";
 import produtos from "../../data/produtos";
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default props =>{
+export default (props) => {
+  function getProdutosListItem() {
+    return produtos.map((prod) => {
+      return (
+        <li key={prod.id}>
+          {prod.id} - {prod.nome} - R$ {prod.preco}
+        </li>
+      );
+    });
+  }
 
-    function getProdutosListItem() {
-        return produtos.map(prod =>{
-            return<li key={prod.id}>
-                {prod.id} - {prod.nome} - R$ {prod.preco}
-            </li>
-
-        })
-    }
-
-
-    return (
-        <div>
-            <h2>Repetição</h2>
-            <ul>
-                {getProdutosListItem()}
-            </ul>
-        </div>
-
-    )
-
-}
+  return (
+    <div>
+      <h2>Repetição</h2>
+      <ul>{getProdutosListItem()}</ul>
+    </div>
+  );
+};
